@@ -4,6 +4,12 @@ import com.restrainfurniture.BoniiKwiiDz.RestrainMod;
 
 import java.util.*;
 
+import java.util.List;
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
+import java.awt.image.BufferedImage;
+
 public class DownloadImg extends Thread 
 {
     public DownloadImg(String skin_name){
