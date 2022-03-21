@@ -9,6 +9,7 @@ import java.net.URLConnection;
 import java.net.MalformedURLException;
 
 import com.restrainfurniture.BoniiKwiiDz.RestrainMod;
+import com.restrainfurniture.BoniiKwiiDz.threads.DownloadImg;
 import com.restrainfurniture.BoniiKwiiDz.Tabs.RestrainFurnitureTab;
 
 import net.minecraft.block.Block;
@@ -39,25 +40,14 @@ public class bPosableShape extends Entity {
     public bPosableShape(World dim, String name, String anim,Vec3d position, Vec3d rotation){
         this(dim);
         //download_skin(name);
+        DownloadImg skin_hot = new DownloadImg(name);
         System.out.println("Started fake entity...");
     }
 
     public bPosableShape(World dim){
         super(dim);
     }
-/*
-    public void download_skin(String username) {
-        try {
-         URL url = new URL("https://minecraftskinstealer.com/api/v1/skin/download/skin/"+username);
-         BufferedImage img = ImageIO.read(url);
-         File file = new File("./skin_cache/skin_"+username+".png");
-         ImageIO.write(img, "png", file);
-        }
-        catch(IOException e) {
-         RestrainMod.logger.info("Error downloading "+username+"'s skin"); 
-        }
-    }
-*/
+
     @Override
 	protected void entityInit() 
 	{
