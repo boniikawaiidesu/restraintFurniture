@@ -1,0 +1,29 @@
+{
+    "variants": 
+    {
+        "facing=up": 
+        { 
+            "model": "restraintfmod:furniture_shapex" 
+        },
+    
+        "facing=south": 
+        { 
+            "model": "restraintfmod:furniture_shapex" 
+        },
+    
+        "facing=east": 
+        { 
+            "model": "restraintfmod:furniture_shapex" ,"y":270 
+        },
+    
+        "facing=west": 
+        { 
+            "model": "restraintfmod:furniture_shapex" ,"y":90 
+        },
+    
+        "facing=north": 
+        { 
+            "model": "restraintfmod:furniture_shapex" ,"y":180 
+        }
+    }
+}
