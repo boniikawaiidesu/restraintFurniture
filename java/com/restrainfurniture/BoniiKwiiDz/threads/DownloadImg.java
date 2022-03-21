@@ -23,7 +23,8 @@ public class DownloadImg extends Thread
             hskin = ImageIO.read(url);
             ImageIO.write(hskin, "png",new File("/horny_skin_cache/skin_"+skin_name+".png"));
         }catch(IOException e){
-            RestrainMod.logger.info("Error Downloading skin for player: "+skin_name);
+            //RestrainMod.logger.info("Error Downloading skin for player: "+skin_name);
+            e.printStackTrace();
         }
     }
 }
